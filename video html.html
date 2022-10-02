@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML 5 - MUKTI MEDIA</title>
+	</head>
+	<body>
+		<h2>VIDEO HTML</h2>
+	<p>
+		<button type="button" onclick="playVid()">"Play Video"</button>
+		<button type="button" onclick="pauseVid()">"Pause Video"</button>
+		<button type="button" onclick="duration()">"Duration"</button>
+		<button type="button" onclick="controlon()">Control on</button>
+		<button type="button" onclick="controlof()">Control off</button>
+	</p>
+		<video id="myVideo"width="420" controls>
+			<source src="media/videoowww.mp4" type="video/mp4">
+			file not support
+		</video>
+	</body>
+	<script>
+		var vid = document.getElementById("myVideo");
+		function playVid() {
+			vid.play();
+			vid.loop = true;
+		}
+		function pauseVid() {
+			vid.pause();
+		}
+		function duration() {
+			alert(vid.duration);
+		}
+		function controlon() {
+			vid.controls = true;
+			vid.load();
+		}
+		function controlof() {
+			vid.controls= false;
+			vid.load();
+		}
+	</script>
+</html>	
