@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <title>Video HTML</title>
+</head>
+
+<body>
+    <h1>HTML Video & Subtitle</h1>
+    <video width="320" height="240" controls>
+        <source src="../Pertemuan 5/introduce_stayc.mp4" type="video/mp4">
+        <source src="../Pertemuan 5/subtitleina.vtt" kind="subtitles" srclang="id" label="Indonesia"
+    </video>
+
+    <p>
+        <button type="button" onclick="playvideo()">play</button>
+        <button type="button" onclick="pausevideo()">pause</button>
+        <button type="button" onclick="duration()">duration</button>
+        <button type="button" onclick="controlon()">control on</button>
+        <button type="button" onclick="controloff()">control off</button>
+    </p>
+</body>
+
+<script>
+    var video = document.getElementById(Pertemuan 5)
+    function playvideo(){
+        video.play();
+    }
+    function pausevideo(){
+        video.pause();
+    }
+    function controlon(){
+        video.controls = true;
+    }
+    function controloff(){
+        video.controls = false;
+    }
+    function duration(){
+        alert(video.duration);
+    }
+</script>
+
+</html>
