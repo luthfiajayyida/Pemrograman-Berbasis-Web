@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    padding: 30px;
+    text-align: center;
+    border: 1px solid rgb(255, 102, 163);
+    background-color: rgb(253, 253, 253);
+}
+
+nav{
+    float: left;
+    width: 20%;
+}
+
+nav ul{
+    list-style-type: none;
+    border: 1px rgb(255, 102, 163);
+    background-color:  rgb(253, 253, 253);
+    text-align: center;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+nav ul li a{
+    display: block;
+    color: rgb(255, 102, 163);
+    padding: 8px 16px;
+}
+
+nav ul li a:hover{
+    background-color: rgb(253, 253, 253);
+    color: rgb(255, 102, 163);
+}
+
+article{
+    float: left;
+    width: 80%;
+    border: 1px solid rgb(255, 102, 163);
+    background-color: rgb(253, 253, 253);
+    padding: 0 20px;
+}
+
+footer{
+    text-align: center;
+}
+
+.satu{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 102, 163);
+}
+
+.dua{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 102, 163);
+}
