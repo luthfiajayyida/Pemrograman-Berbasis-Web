@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello JavaScript</title>
+    </head>
+    <body>
+        <h3>Daftar Nama Mawapres 2023</h3>
+        <form onsubmit="func()" action="javascript:void(0);" method="post">
+            <input type="text" placeholder="Input Nama Mahasiswa">
+            <input type="submit" value="+">
+        </form>
+        <div id="counter">
+            <!---Nilai Dinamis (Javascript)-->
+        </div>
+        <table border="1">
+            <thead>
+                <tr><td>Data Mawapres 2023</td></tr>
+            </thead>
+            <tbody id="daftarNama">
+                <!--Nilai Dinamis (Javascript)-->
+            </tbody>
+        </table>
+        <script>
+            var app = new function(){
+                this.mhs = ['Jono','Jini','Jane'];
+                this.dt = document.getElementById('daftarNama');
+
+                this.barisAll = function(){
+                    var data = '';
+
+                    if(this.mhs.length > 0){
+                        for (i = 0; i < this.mgs.length; i++){
+                            data += '<tr>';
+                            data += '<td>' + this.mhs[i] + '</td>';
+                            data += '</tr>';
+                        }
+                    }
+                    return this.dt.innerHTML = data;
+                };
+            }
+            app.barisAll();
+        </script>
+    </body>
+</html>
